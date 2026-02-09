@@ -1,0 +1,9 @@
+.env
+logs/
+.venv/
+__pycache__/
+metrolinx_api/__pycache__/
+utilities/__pycache__/
+utilities/api_viewing_tool.py
+utilities/static_db_setup.py
+utilities/dummy_query.py

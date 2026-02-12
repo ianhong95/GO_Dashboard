@@ -27,7 +27,7 @@ class GeneralDataFetcher():
     def send_get_request(self, api_method: str):
         '''Helper function to send http requests.'''
 
-        r = httpx.get(f'{self.URL}/{api_method}?key={self.API_KEY}', timeout=30.0)
+        r = httpx.get(f'{self.URL}/{api_method}?key={self.API_KEY}', timeout=300.0)
         return r
 
 

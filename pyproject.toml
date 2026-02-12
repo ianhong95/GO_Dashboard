@@ -11,5 +11,10 @@ dependencies = [
     "psycopg[binary]>=3.3.2",
 ]
 
-[tool.setuptools]
-packages = ["metrolinx_api", "utilities", "sql_scripts"]
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
